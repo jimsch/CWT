@@ -1,0 +1,47 @@
+{
+   "title":"CWT draft - Example A.6 - Signed & Encrypted",
+    "input":{
+       "token": {
+               "iss": "coap://as.example.com",
+               "sub": "erikw",
+               "aud": "coap://light.example.com",
+               "exp": 1444064944,
+               "nbf": 1443944944,
+               "iat": 1443944944,
+               "cti_hex": "0b71"
+       },
+       "encrypted":{
+               "key":{
+                  "kty":"oct",
+                   "use":"enc",
+                   "alg":"AES-CCM-16-128/64",
+                  "k_hex":"231f4c4d4d3051fdc2ec0a3851d5b383"
+               }
+       },
+      "sign0":{
+         "key":{
+            "kty":"EC",
+            "crv":"P-256",
+             "alg":"ES256",
+            "d_hex":"6c1382765aec5358f117733d281c1c7bdc39884d04a45a1e6c67c858bc206c19",
+            "y_hex":"60f7f1a780d8a783bfb7a2dd6b2796e8128dbbcef9d3d168db9529971a36e7b9",
+            "x_hex":"143329cce7868e416927599cf65a34f3ce2ffda55a7eca69ed8919a394d42f0f"
+         }
+      },
+      "rng_stream":[
+         "86BBD41CC32604396324B7F380"
+      ]
+   },
+   "intermediates":{
+      "recipients":[
+         {
+         }
+      ],
+      "AAD_hex":"8368456E63727970743043A1010A40",
+      "CEK_hex":"231F4C4D4D3051FDC2EC0A3851D5B383"
+   },
+   "output":{
+      "cbor_diag":"16([h'A1010A', {5: h'86BBD41CC32604396324B7F380'}, h'72439FBFF538AA7B601EBFB29454050A3C99FD13B27216D084556496C7355C4BB462510F8E0E8479DBE08722D620E96BCB7764D75140D96220F062679B46B897E7ABE0C325DC2C96D8BB2C8334E3B92A42C0078983E753C054E647AD5387ED149F802F52B5A95EBF5F153C4FD64854AB7531E082B7F22721F939D257C94F8BC248E1D9CF04F9DD4E5DE7AB62DF37842FABEC230A657D4ABF7162BC786345EBB8EB3AF0'])",
+      "cbor":"D08343A1010AA1054D86BBD41CC32604396324B7F38058A372439FBFF538AA7B601EBFB29454050A3C99FD13B27216D084556496C7355C4BB462510F8E0E8479DBE08722D620E96BCB7764D75140D96220F062679B46B897E7ABE0C325DC2C96D8BB2C8334E3B92A42C0078983E753C054E647AD5387ED149F802F52B5A95EBF5F153C4FD64854AB7531E082B7F22721F939D257C94F8BC248E1D9CF04F9DD4E5DE7AB62DF37842FABEC230A657D4ABF7162BC786345EBB8EB3AF0"
+   }
+}

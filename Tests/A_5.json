@@ -1,0 +1,32 @@
+{
+   "title":"CWT draft - Example A.5 - Encrypted",
+   "input":{
+       "token": {
+               "iss": "coap://as.example.com",
+               "sub": "erikw",
+               "aud": "coap://light.example.com",
+               "exp": 1444064944,
+               "nbf": 1443944944,
+               "iat": 1443944944,
+               "cti_hex": "0b71"
+       },
+       "encrypted":{
+               "key":{
+                  "kty":"oct",
+                   "use":"enc",
+                   "alg":"AES-CCM-16-128/64",
+                  "k_hex":"231f4c4d4d3051fdc2ec0a3851d5b383"
+               }
+       },
+      "rng_stream":[
+         "99A0D7846E762C49FFE8A63E0B"
+      ]
+   },
+    "intermediates":{
+        "payload":"888"
+   },
+   "output":{
+      "cbor_diag":"16([h'A1010A', {5: h'99A0D7846E762C49FFE8A63E0B'}, h'B918A11FD81E438B7F973D9E2E119BCB22424BA0F38A80F27562F400EE1D0D6C0FDB559C02421FD384FC2EBE22D7071378B0EA7428FFF157444D45F7E6AFCDA1AAE5F6495830C58627087FC5B4974F319A8707A635DD643B'])",
+      "cbor":"D08343A1010AA1054D99A0D7846E762C49FFE8A63E0B5858B918A11FD81E438B7F973D9E2E119BCB22424BA0F38A80F27562F400EE1D0D6C0FDB559C02421FD384FC2EBE22D7071378B0EA7428FFF157444D45F7E6AFCDA1AAE5F6495830C58627087FC5B4974F319A8707A635DD643B"
+   }
+}

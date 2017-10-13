@@ -1,0 +1,30 @@
+{
+   "title":"CWT doument - Appendix A.4",
+   "input":{
+       "token": {
+               "iss": "coap://as.example.com",
+               "sub": "erikw",
+               "aud": "coap://light.example.com",
+               "exp": 1444064944,
+               "nbf": 1443944944,
+               "iat": 1443944944,
+               "cti_hex": "0b71"
+       },
+      "mac0":{
+               "key":{
+                  "kty":"oct",
+                  "kid":"our-secret",
+                  "use":"enc",
+                   "alg":"HS256/64",
+                  "k_hex":"403697de87af64611c1d32a05dab0fe1fcb715a86ab435f1ec99192d79569388"
+               }
+
+      }
+   },
+   "intermediates":{
+   },
+   "output":{
+      "cbor_diag":"17([h'A10104', {}, h'A70175636F61703A2F2F61732E6578616D706C652E636F6D02656572696B77037818636F61703A2F2F6C696768742E6578616D706C652E636F6D041A5612AEB0051A5610D9F0061A5610D9F007420B71', h'093101EF6D789200'])",
+      "cbor":"D18443A10104A05850A70175636F61703A2F2F61732E6578616D706C652E636F6D02656572696B77037818636F61703A2F2F6C696768742E6578616D706C652E636F6D041A5612AEB0051A5610D9F0061A5610D9F007420B7148093101EF6D789200"
+   }
+}
