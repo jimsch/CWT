@@ -1,6 +1,6 @@
 #!/bin/bash
 set -ev
-mono nuget.exe restore $SLN
+mono nuget.exe restore $SLN -PackagesDirectory ./packages
 
 ls
 ls WebToken
