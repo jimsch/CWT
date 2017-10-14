@@ -2,9 +2,7 @@
 set -ev
 mono nuget.exe restore $SLN
 
-ls packages
-ls packages/Portable.BouncyCastle.1.8.1.3
-ls packages/Portable.BouncyCastle.1.8.1.3/lib
+ls
 
 
 msbuild /p:Configuration=$VERSION $SLN
