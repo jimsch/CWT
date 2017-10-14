@@ -3,7 +3,7 @@ set -ev
 mono nuget.exe restore $SLN
 
 ls
-
+ls WebToken
 
 msbuild /p:Configuration=$VERSION $SLN
 
