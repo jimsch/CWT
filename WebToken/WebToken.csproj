@@ -2,11 +2,38 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
+    <PackageId>Com.AugustCellars.CWT</PackageId>
+    <Id>Com.AugustCellars.CWT</Id>
+    <PackageVersion>0.0.1.0</PackageVersion>
+    <Version>0.0.1.0</Version>
+    <Authors>Jim Schaad</Authors>
+    <Description>An implementation of the CWT specification.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright @2017 Jim Schaad</Copyright>
+    <PackageTags>CWT COSE CBOR</PackageTags>
+    
+    <PackageReleaseNotes>
+ 0.0.1
+ * First drop to get things running.
+    </PackageReleaseNotes>
+   
+    <Configurations>Debug;Release;Deploy</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <RootNamespace>Com.AugustCellars.WebToken</RootNamespace>
+    <AssemblyName>CWT</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Deploy|Any CPU' ">
+    <AssemblyOriginatorKeyFile>AugustCellarsStrongKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <IntermediateOutputPath>obj\Deploy\Std10</IntermediateOutputPath>
+    <OutputPath>bin\Deploy\Std10\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
