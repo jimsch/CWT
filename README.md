@@ -1,7 +1,7 @@
 # CWT - a CBOR Web Token implementation in C#
 
-[![NuGet Status](https://img.shields.io/nuget/v/Com.AugustCellars.CWT.png)](https://www.nuget.org/packages/Com.AugustCellars.CWT)
-[![Build Status](https://api.travis-ci.org/jimsch/CWT.png)](https://travis-ci.org/jimsch/CWT)
+[![NuGet Status](https://img.shields.io/nuget/v/Com.AugustCellars.WebToken.png)](https://www.nuget.org/packages/Com.AugustCellars.WebToken)
+[![Build Status](https://api.travis-ci.org/Com-AugustCellars/CWT.png)](https://travis-ci.org/Com-AugustCellars/CWT)
 
 The CBOR Web Token (https://datatracker.ietf.org/doc/draft-ietf-ace-cbor-web-token/) is a compact means to representing claims being transfered between two parites.
 A claim is a piece of information, such as a key or an identity, that is being asserted about a subject.
@@ -23,8 +23,8 @@ Copyright (c) 2017, Jim Schaad <ietf@augustcellars.com>
 
 ## How to install
 
-The C# implementation is available in the NuGet Package Gallery under the name [Com.AugustCellars.CWT](https://www.nuget.org/packages/Com.AugustCellars.CWT).
-To install this library as a NuGet package, enter 'Install-Package Com.AugustCellars.CWT' in the NuGet Package Manager Console.
+The C# implementation is available in the NuGet Package Gallery under the name [Com.AugustCellars.WebToken](https://www.nuget.org/packages/Com.AugustCellars.WebToken).
+To install this library as a NuGet package, enter 'Install-Package Com.AugustCellars.WebToken' in the NuGet Package Manager Console.
 
 ## Documentation
 
