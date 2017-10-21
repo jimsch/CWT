@@ -1,8 +1,8 @@
 #!/bin/bash
 set -ev
-mono nuget.exe restore $SLN -PackagesDirectory ./packages
+mono nuget.exe restore $SLN -PackagesDirectory ../packages
 
-ls
+ls 
 ls WebToken
 
 msbuild /p:Configuration=$VERSION $SLN
