@@ -19,7 +19,7 @@ namespace WebTokenTest
         [Test]
         public void RunFiles()
         {
-            DirectoryInfo di = new DirectoryInfo("c:/Projects/coap/CoAP/cwt/Tests");
+            DirectoryInfo di = new DirectoryInfo("./Tests");
             ProcessDirectory(di);
 
         }
