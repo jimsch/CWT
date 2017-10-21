@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
-    <PackageId>Com.AugustCellars.CWT</PackageId>
-    <Id>Com.AugustCellars.CWT</Id>
+    <PackageId>Com.AugustCellars.WebToken</PackageId>
+    <Id>Com.AugustCellars.WebToken</Id>
     <PackageVersion>0.0.1.0</PackageVersion>
     <Version>0.0.1.0</Version>
     <Authors>Jim Schaad</Authors>
